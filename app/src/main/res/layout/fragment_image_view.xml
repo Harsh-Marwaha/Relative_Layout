@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageViewFragment"
+    android:gravity="center"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/imgOne"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/twitter"
+                android:id="@+id/imgTwo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/whatsapp"
+                android:id="@+id/imgThree"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/instagram"
+                android:id="@+id/imgFour"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:padding="10dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/btn1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="random"/>
+
+            <Button
+                android:padding="10dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/btn2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <Button
+                android:padding="10dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/btn3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <Button
+                android:padding="10dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/btn4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navBmi"
+        android:title="BMI"
+        android:icon="@drawable/bmi"/>
+
+
+    <item
+        android:id="@+id/navCalculator"
+        android:title="Calculator"
+        android:icon="@drawable/calculator"/>
+
+
+    <item
+        android:id="@+id/navTicTacToe"
+        android:title="Tic Tac Toe"
+        android:icon="@drawable/tictactoe"/>
+
+
+    <item
+        android:id="@+id/navImageView"
+        android:title="Image View"
+        android:icon="@drawable/gallery"/>
+
+
+</menu>

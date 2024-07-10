@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorFragment"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvFirstNumber"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Enter First Number : " />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_toRightOf="@+id/tvFirstNumber"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:ems="11"
+        android:hint="value of first number"
+        android:padding="8dp"
+        android:textSize="12dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tvSecondNumber"
+        android:layout_below="@+id/tvFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Enter Second Number :"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_below="@+id/a"
+        android:layout_toRightOf="@+id/tvSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:ems="11"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:hint="Value of second number"
+        android:inputType="number"/>
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_below="@+id/tvSecondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_input_add"
+        />
+
+    <ImageButton
+        android:id="@+id/sub"
+        android:layout_below="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:src="@drawable/minus" />
+
+    <ImageButton
+        android:id="@+id/mul"
+        android:layout_below="@id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageButton
+        android:layout_below="@id/mul"
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:src="@drawable/divide" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_below="@+id/div"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="45dp"
+        android:padding="15dp"
+        android:text="RESULT : @+id/res"/>
+
+</RelativeLayout>

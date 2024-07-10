@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiFragment"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvWt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:text="Enter Weight :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/wt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvWt"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="in Kgs"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvHt"
+        android:layout_below="@+id/tvWt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="Enter Height"/>
+    <EditText
+        android:layout_toRightOf="@+id/tvHt"
+        android:layout_below="@+id/wt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:hint="ft"
+        android:textSize="12dp"
+        android:inputType="number"
+        android:id="@+id/ft"/>
+    <EditText
+        android:layout_toRightOf="@+id/ft"
+        android:layout_below="@+id/wt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:textSize="12dp"
+        android:hint="in"
+        android:inputType="number"
+        android:id="@+id/in"/>
+    <Button
+        android:layout_below="@+id/ft"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:text="Calculate"
+        android:id="@+id/cal"
+        />
+    <TextView
+        android:layout_below="@id/cal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/res"
+        android:text="@+id/res"/>
+    <TextView
+        android:layout_below="@+id/res"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:id="@+id/bm"
+        android:layout_gravity="center"
+        android:text="BMI : @+id/bm"/>
+
+</RelativeLayout>
